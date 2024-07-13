@@ -1,3 +1,5 @@
+package algorithms;
+
 import java.math.BigInteger;
 
 public class BigIntAlgorithm implements MultiplicationInterface {

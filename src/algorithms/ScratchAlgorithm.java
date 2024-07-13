@@ -1,4 +1,4 @@
-import java.math.BigInteger;
+package algorithms;
 
 public class ScratchAlgorithm implements MultiplicationInterface {
 
