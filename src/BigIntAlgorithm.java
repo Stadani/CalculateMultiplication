@@ -1,15 +1,13 @@
 import java.math.BigInteger;
 
-public class BigIntAlgorithm {
+public class BigIntAlgorithm implements MultiplicationInterface {
     BigInteger num1;
     BigInteger num2;
 
-    public BigIntAlgorithm(BigInteger num1, BigInteger num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
-
-    public BigInteger multiply() {
-        return num1.multiply(num2);
+    @Override
+    public String multiply(String num1, String num2) {
+        this.num1 = new BigInteger(num1);
+        this.num2 = new BigInteger(num2);
+        return this.num1.multiply(this.num2).toString();
     }
 }
